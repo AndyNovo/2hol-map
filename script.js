@@ -365,7 +365,7 @@ function showDetail(id) {
 
 // ---------- Views ----------
 function openMenu() {
-  if (!window.matchMedia("max-width: 400px")) return;
+  if (!window.matchMedia("max-width: 600px")) return;
   const nav = document.getElementById("nav");
   const auth_area = document.getElementById("auth-area");
   const shrink_btn = document.getElementById("shrink-button");
