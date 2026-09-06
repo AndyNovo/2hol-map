@@ -364,6 +364,23 @@ function showDetail(id) {
 }
 
 // ---------- Views ----------
+function openMenu() {
+  if (!window.matchMedia("max-width: 400px")) return;
+  const nav = document.getElementById("nav");
+  const auth_area = document.getElementById("auth-area");
+  const shrink_btn = document.getElementById("shrink-button");
+  if (nav.classList.contains("shrink")) {
+    nav.classList.remove("shrink");
+    auth_area.classList.remove("shrink");
+    shrink_btn.innerHTML = "︿";
+  } else {
+    nav.classList.add("shrink");
+    auth_area.classList.add("shrink");
+    shrink_btn.innerHTML = "﹀";
+  }
+  if (document.getElementById("btn-map").classList.contains("active")) switchView("map");
+}
+
 function switchView(view) {
   document.querySelectorAll(".view").forEach(v => v.classList.remove("active"));
   document.querySelectorAll(".nav-btn").forEach(b => b.classList.remove("active"));
@@ -985,6 +1002,7 @@ document.getElementById("sort-towns").addEventListener("change", renderTownList)
 document.getElementById("search-reports").addEventListener("input", renderReportsTable);
 document.getElementById("filter-problems")?.addEventListener("change", renderReportsTable);
 document.getElementById("rtown").addEventListener("input", checkNameSimilarity);
+document.getElementById("shrink-button").addEventListener("click", openMenu);
 document.getElementById("btn-login").addEventListener("click", loginWithDiscord);
 document.getElementById("btn-logout").addEventListener("click", logout);
 
