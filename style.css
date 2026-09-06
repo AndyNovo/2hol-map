@@ -632,7 +632,7 @@ tr.flag-extreme {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .shrink {
     display: none !important;
   }
