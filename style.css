@@ -326,7 +326,7 @@ select:focus {
 
 .warning.hidden,
 .hidden {
-  /* display: none !important; */
+  display: none !important;
 }
 
 /* Detail card */
