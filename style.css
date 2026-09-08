@@ -269,7 +269,7 @@ select:focus {
 }
 
 .coord-cont {
-  max-width: 45%;
+  width: calc(50% - 1rem);
 }
 
 .coord-row {
@@ -326,7 +326,7 @@ select:focus {
 
 .warning.hidden,
 .hidden {
-  display: none !important;
+  /* display: none !important; */
 }
 
 /* Detail card */
