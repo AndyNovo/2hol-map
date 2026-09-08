@@ -380,7 +380,7 @@ function openMenu() {
     auth_area.classList.add("shrink");
     shrink_btn.innerHTML = "﹀";
   }
-  // if (document.getElementById("btn-map").classList.contains("active")) switchView("map");
+  if (document.getElementById("btn-map").classList.contains("active")) switchView("map");
 }
 
 function switchView(view) {
