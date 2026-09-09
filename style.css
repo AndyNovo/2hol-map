@@ -169,6 +169,11 @@ main {
   min-height: 0;
 }
 
+/* Makes modebar scale with accessibility */
+.modebar-btn {
+  font-size: 1rem !important;
+}
+
 /* Form panel */
 .panel {
   position: absolute;
@@ -264,7 +269,7 @@ select:focus {
 }
 
 .coord-cont {
-  max-width: 45%;
+  width: calc(50% - 1rem);
 }
 
 .coord-row {

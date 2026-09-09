@@ -285,13 +285,15 @@ function drawChart(townMap) {
     font: { color: "#e7ecf3", family: "Inter, sans-serif" },
     margin: { t: 30, r: 20, b: 40, l: 50 },
     xaxis: {
-      title: "X", range: [-maxAbs, maxAbs],
+      minallowed: -maxAbs * 2, maxallowed: maxAbs * 2,
+      range: [-maxAbs, maxAbs],
       zeroline: true, zerolinecolor: "#6b7280", zerolinewidth: 2,
       gridcolor: "#1f2937", tickfont: { size: 11 },
       scaleanchor: "y", scaleratio: 1
     },
     yaxis: {
-      title: "Y", range: [-maxAbs, maxAbs],
+      minallowed: -maxAbs * 2, maxallowed: maxAbs * 2,
+      range: [-maxAbs, maxAbs],
       zeroline: true, zerolinecolor: "#6b7280", zerolinewidth: 2,
       gridcolor: "#1f2937", tickfont: { size: 11 }
     },
